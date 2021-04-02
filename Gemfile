@@ -21,6 +21,9 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'devise'
+gem 'devise-bootstrap-views', '~> 1.0'
+gem 'iex-ruby-client'
+
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
@@ -34,6 +37,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'dotenv-rails'
   gem 'sqlite3', '~> 1.4'
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
@@ -44,6 +48,7 @@ group :development do
 end
 
 group :test do
+  gem 'dotenv-rails'
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
